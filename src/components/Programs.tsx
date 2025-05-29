@@ -20,7 +20,8 @@ const Programs = () => {
         "Final EXPO presentation"
       ],
       highlights: ["Self-discovery", "Career exploration", "Skill development"],
-      color: "from-blue-500 to-blue-600"
+      color: "from-blue-500 to-blue-600",
+      image: "photo-1581091226825-a6a2a5aee158"
     },
     {
       title: "ProMap Program",
@@ -38,7 +39,8 @@ const Programs = () => {
         "Industry expert presentations"
       ],
       highlights: ["Career planning", "Professional skills", "Global opportunities"],
-      color: "from-yellow-500 to-yellow-600"
+      color: "from-yellow-500 to-yellow-600",
+      image: "photo-1434494878577-86c23bcb06b9"
     },
     {
       title: "Future-Maker School Package",
@@ -56,14 +58,15 @@ const Programs = () => {
         "Ongoing support system"
       ],
       highlights: ["School transformation", "Staff development", "Student success"],
-      color: "from-blue-600 to-yellow-500"
+      color: "from-blue-600 to-yellow-500",
+      image: "photo-1519389950473-47ba0277781c"
     }
   ];
 
   return (
     <section id="programs" className="py-20 px-6 bg-gradient-to-br from-gray-50 to-blue-50">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
             Our <span className="bg-gradient-to-r from-blue-600 to-yellow-500 bg-clip-text text-transparent">Programs</span>
           </h2>
@@ -75,17 +78,27 @@ const Programs = () => {
 
         <div className="grid lg:grid-cols-3 gap-8">
           {programs.map((program, index) => (
-            <div key={index} className="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 hover:scale-105">
-              <div className={`bg-gradient-to-r ${program.color} p-6 text-white`}>
-                <div className="flex items-center justify-between mb-4">
-                  <program.icon className="w-10 h-10" />
-                  <div className="flex items-center text-sm bg-white/20 px-3 py-1 rounded-full">
-                    <Clock className="w-4 h-4 mr-2" />
-                    {program.duration}
+            <div key={index} className="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 hover:scale-105 group animate-fade-in" style={{animationDelay: `${index * 300}ms`}}>
+              <div className="relative">
+                <img
+                  src={`https://images.unsplash.com/${program.image}?auto=format&fit=crop&w=500&q=80`}
+                  alt={program.title}
+                  className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className={`absolute inset-0 bg-gradient-to-r ${program.color} opacity-90`}></div>
+                <div className="absolute inset-0 p-6 text-white flex flex-col justify-between">
+                  <div className="flex items-center justify-between">
+                    <program.icon className="w-10 h-10" />
+                    <div className="flex items-center text-sm bg-white/20 px-3 py-1 rounded-full">
+                      <Clock className="w-4 h-4 mr-2" />
+                      {program.duration}
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold mb-2">{program.title}</h3>
+                    <p className="text-lg opacity-90">{program.subtitle}</p>
                   </div>
                 </div>
-                <h3 className="text-2xl font-bold mb-2">{program.title}</h3>
-                <p className="text-lg opacity-90">{program.subtitle}</p>
               </div>
 
               <div className="p-6">
@@ -95,7 +108,7 @@ const Programs = () => {
                   <h4 className="font-semibold text-gray-800 mb-3">Program Highlights:</h4>
                   <div className="flex flex-wrap gap-2">
                     {program.highlights.map((highlight, highlightIndex) => (
-                      <span key={highlightIndex} className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm">
+                      <span key={highlightIndex} className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm hover:scale-105 transition-transform duration-200">
                         {highlight}
                       </span>
                     ))}
@@ -106,7 +119,7 @@ const Programs = () => {
                   <h4 className="font-semibold text-gray-800 mb-3">What's Included:</h4>
                   <ul className="space-y-2">
                     {program.features.slice(0, 4).map((feature, featureIndex) => (
-                      <li key={featureIndex} className="flex items-start text-sm text-gray-700">
+                      <li key={featureIndex} className="flex items-start text-sm text-gray-700 hover:text-blue-600 transition-colors duration-200">
                         <CheckCircle className="w-4 h-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
                         {feature}
                       </li>
@@ -119,7 +132,7 @@ const Programs = () => {
                   </ul>
                 </div>
 
-                <Button className={`w-full bg-gradient-to-r ${program.color} hover:opacity-90 text-white`}>
+                <Button className={`w-full bg-gradient-to-r ${program.color} hover:opacity-90 text-white transition-all duration-300 hover:scale-105`}>
                   Learn More
                 </Button>
               </div>
@@ -127,17 +140,26 @@ const Programs = () => {
           ))}
         </div>
 
-        <div className="mt-16 bg-gradient-to-r from-blue-600 to-yellow-500 rounded-3xl p-8 text-white text-center">
-          <h3 className="text-2xl font-bold mb-4">Ready to Transform Education?</h3>
-          <p className="text-lg mb-6 opacity-90">
-            Join hundreds of students and institutions who have already started their journey to educational excellence.
-          </p>
-          <Button 
-            size="lg" 
-            className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-3 rounded-full font-semibold"
-          >
-            Get Started Today
-          </Button>
+        <div className="mt-16 bg-gradient-to-r from-blue-600 to-yellow-500 rounded-3xl p-8 text-white text-center relative overflow-hidden animate-fade-in animation-delay-1000">
+          <div className="absolute inset-0">
+            <img 
+              src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1200&q=80" 
+              alt="Education background"
+              className="w-full h-full object-cover opacity-10"
+            />
+          </div>
+          <div className="relative z-10">
+            <h3 className="text-2xl font-bold mb-4">Ready to Transform Education?</h3>
+            <p className="text-lg mb-6 opacity-90">
+              Join hundreds of students and institutions who have already started their journey to educational excellence.
+            </p>
+            <Button 
+              size="lg" 
+              className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-3 rounded-full font-semibold hover:scale-105 transition-all duration-300"
+            >
+              Get Started Today
+            </Button>
+          </div>
         </div>
       </div>
     </section>
