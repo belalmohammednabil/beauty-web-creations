@@ -4,12 +4,12 @@ import { ArrowRight, Star, Users, TrendingUp } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section id="home" className="pt-20 pb-16 px-6 min-h-screen flex items-center">
+    <section id="home" className="pt-20 pb-16 px-6 min-h-screen flex items-center" dir="rtl">
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-8 animate-fade-in">
+          <div className="space-y-8 animate-fade-in text-right">
             <div className="space-y-4">
-              <div className="inline-flex items-center space-x-2 bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-medium animate-fade-in animation-delay-500">
+              <div className="inline-flex items-center space-x-2 space-x-reverse bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-medium animate-fade-in animation-delay-500">
                 <Star className="w-4 h-4" />
                 <span>منصة التميز التعليمي</span>
               </div>
@@ -35,7 +35,7 @@ const Hero = () => {
                 className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-8 py-3 rounded-full transition-all duration-300 hover:scale-105"
               >
                 استكشف البرامج
-                <ArrowRight className="w-5 h-5 ml-2" />
+                <ArrowRight className="w-5 h-5 mr-2" />
               </Button>
               <Button 
                 variant="outline" 
@@ -79,7 +79,7 @@ const Hero = () => {
                 alt="Students learning"
                 className="rounded-2xl w-full h-80 object-cover hover:scale-105 transition-transform duration-500"
               />
-              <div className="absolute -bottom-4 -right-4 bg-gradient-to-r from-blue-600 to-yellow-500 text-white p-4 rounded-2xl shadow-lg animate-float">
+              <div className="absolute -bottom-4 -left-4 bg-gradient-to-r from-blue-600 to-yellow-500 text-white p-4 rounded-2xl shadow-lg animate-float">
                 <div className="text-lg font-bold">جاهز للمستقبل</div>
                 <div className="text-sm opacity-90">منصة تعليمية</div>
               </div>

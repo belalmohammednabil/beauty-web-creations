@@ -1,100 +1,124 @@
 
-import { AlertTriangle, Target, TrendingDown, BookOpen } from "lucide-react";
+import { AlertTriangle, BookOpen, Users, Target } from "lucide-react";
 
 const Introduction = () => {
   const challenges = [
     {
       icon: AlertTriangle,
-      title: "فجوة الوعي الذاتي",
-      description: "يفتقر الطلاب لفهم قدراتهم واهتماماتهم، مما يؤدي إلى خيارات أكاديمية غير مدروسة.",
-      image: "photo-1581092795360-fd1ca04f0952"
-    },
-    {
-      icon: Target,
-      title: "إرشاد مهني محدود",
-      description: "غياب أنظمة الإرشاد المهني الفعّالة باستخدام أدوات التقييم الموثوقة.",
-      image: "photo-1519389950473-47ba0277781c"
-    },
-    {
-      icon: TrendingDown,
-      title: "انفصال التعليم عن السوق",
-      description: "ضعف الروابط بين التعليم وسوق العمل مع محدودية الصلة المهنية.",
-      image: "photo-1460925895917-afdab827c52f"
+      title: "نقص الوعي الذاتي",
+      description: "عدم معرفة الطلاب بقدراتهم واهتماماتهم يؤدي إلى اختيارات أكاديمية ومهنية غير مدروسة"
     },
     {
       icon: BookOpen,
-      title: "نقص الخبرة العملية",
-      description: "قلة التجارب الواقعية التي تربط التعلم النظري بالتحديات العملية.",
-      image: "photo-1498050108023-c5249f4df085"
+      title: "ضعف الإرشاد المهني",
+      description: "غياب أنظمة التوجيه المهني الفعالة باستخدام أدوات موثوقة لتقييم الشخصية والمهارات"
+    },
+    {
+      icon: Users,
+      title: "انقطاع التعليم عن سوق العمل",
+      description: "ضعف الربط بين التعليم وسوق العمل مع افتقار الأنشطة المدرسية للطابع المهني"
     }
   ];
 
-  const statistics = [
-    { stat: "1 من 3", description: "طلاب عرب يشعرون بانفصال التعليم عن مستقبلهم المهني" },
-    { stat: "%75", description: "من الشباب العربي يفتقرون للإرشاد المهني الموثوق أثناء التعليم" }
+  const solutions = [
+    "تحليل بيانات الطلاب لاكتشاف نقاط القوة والصفات الفريدة",
+    "تصميم رحلات تعلم مرنة وعملية مع برامج تدريجية",
+    "استخدام منهجية Capstone للمشاريع التطبيقية",
+    "التركيز على الكفاءات المهنية المتماشية مع احتياجات السوق",
+    "دمج المهارات المعترف بها عالمياً كالتفكير النقدي والتعاون",
+    "التوافق مع أهداف التنمية المستدامة للوعي المجتمعي"
   ];
 
   return (
-    <section id="about" className="py-20 px-6 bg-gradient-to-r from-blue-50 to-yellow-50">
+    <section id="about" className="py-20 px-6 bg-gradient-to-br from-white via-blue-50 to-white" dir="rtl">
       <div className="max-w-7xl mx-auto">
+        {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-            مواجهة التحديات <span className="bg-gradient-to-r from-blue-600 to-yellow-500 bg-clip-text text-transparent">التعليمية</span>
+            <span className="bg-gradient-to-r from-blue-600 to-yellow-500 bg-clip-text text-transparent">
+              عن البرنامج
+            </span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            رغم الجهود المبذولة لتطوير المناهج وبيئات التعلم، تواجه المدارس في مصر والمنطقة العربية 
-            تحديات كبيرة في إعداد الطلاب لمستقبلهم الأكاديمي والمهني.
+          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+            رغم الجهود المبذولة لتحسين المناهج وبيئات التعلم، تواجه المدارس في مصر والمنطقة العربية 
+            تحديات في إعداد الطلاب لمستقبلهم الأكاديمي والمهني
           </p>
+          <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-yellow-500 mx-auto mt-6"></div>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-          {challenges.map((challenge, index) => (
-            <div key={index} className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 group animate-fade-in" style={{animationDelay: `${index * 200}ms`}}>
-              <div className="relative mb-4 overflow-hidden rounded-xl">
-                <img
-                  src={`https://images.unsplash.com/${challenge.image}?auto=format&fit=crop&w=400&q=80`}
-                  alt={challenge.title}
-                  className="w-full h-32 object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-blue-600/20 to-transparent"></div>
-                <div className="absolute top-2 right-2 flex items-center justify-center w-10 h-10 bg-white/90 rounded-full">
-                  <challenge.icon className="w-5 h-5 text-blue-600" />
-                </div>
-              </div>
-              <h3 className="text-lg font-semibold text-gray-800 mb-3">{challenge.title}</h3>
-              <p className="text-gray-600 text-sm">{challenge.description}</p>
-            </div>
-          ))}
-        </div>
-
-        <div className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-3xl p-8 text-white animate-fade-in">
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div>
-              <h3 className="text-2xl font-bold mb-4">البيانات الداعمة</h3>
-              <div className="space-y-4">
-                {statistics.map((item, index) => (
-                  <div key={index} className="flex items-start space-x-4 hover:scale-105 transition-transform duration-300">
-                    <div className="text-3xl font-bold text-yellow-400">{item.stat}</div>
-                    <div className="text-blue-100">{item.description}</div>
-                  </div>
-                ))}
-              </div>
-            </div>
+        {/* Statistics */}
+        <div className="grid md:grid-cols-2 gap-8 mb-16">
+          <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 animate-fade-in animation-delay-500 border border-blue-100">
             <div className="text-center">
-              <div className="relative">
-                <img
-                  src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=500&q=80"
-                  alt="Programming and data analysis"
-                  className="rounded-2xl w-full h-48 object-cover opacity-20 absolute inset-0"
-                />
-                <div className="relative z-10 p-6">
-                  <div className="text-4xl font-bold text-yellow-400 mb-2">حلولنا</div>
-                  <p className="text-blue-100">
-                    يوفر برنامج رحلة المشروع الختامي حلاً مبتكراً من خلال تحليل البيانات، 
-                    ورحلات التعلم الشخصية، وتطوير الكفاءات العملية.
-                  </p>
+              <div className="text-5xl font-bold text-blue-600 mb-2">1/3</div>
+              <p className="text-gray-700 text-lg">
+                من الطلاب العرب يشعرون بانقطاع تعليمهم عن مستقبلهم المهني
+              </p>
+              <div className="text-sm text-gray-500 mt-2">- البنك الدولي</div>
+            </div>
+          </div>
+          
+          <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 animate-fade-in animation-delay-700 border border-yellow-100">
+            <div className="text-center">
+              <div className="text-5xl font-bold text-yellow-600 mb-2">%75</div>
+              <p className="text-gray-700 text-lg">
+                من الشباب العربي يفتقرون للإرشاد المهني الموثوق أثناء التعليم الأساسي
+              </p>
+              <div className="text-sm text-gray-500 mt-2">- اليونسكو</div>
+            </div>
+          </div>
+        </div>
+
+        {/* Challenges */}
+        <div className="mb-16">
+          <h3 className="text-3xl font-bold text-gray-800 mb-8 text-center animate-fade-in">
+            التحديات الرئيسية
+          </h3>
+          <div className="grid md:grid-cols-3 gap-6">
+            {challenges.map((challenge, index) => (
+              <div 
+                key={index}
+                className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in border border-gray-100 text-right"
+                style={{animationDelay: `${(index + 1) * 200}ms`}}
+              >
+                <div className="flex items-center justify-end mb-4">
+                  <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center ml-4">
+                    <challenge.icon className="w-6 h-6 text-red-600" />
+                  </div>
                 </div>
+                <h4 className="text-xl font-bold text-gray-800 mb-3">{challenge.title}</h4>
+                <p className="text-gray-600 leading-relaxed">{challenge.description}</p>
               </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Solution */}
+        <div className="bg-gradient-to-br from-blue-600 to-yellow-500 rounded-3xl p-8 md:p-12 text-white animate-fade-in animation-delay-1000">
+          <div className="text-center mb-8">
+            <h3 className="text-3xl md:text-4xl font-bold mb-4">حلولنا المبتكرة</h3>
+            <p className="text-xl opacity-90">
+              برنامج رحلة Capstone يقدم حلولاً مبتكرة لمعالجة هذه الفجوة من خلال:
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-6">
+            {solutions.map((solution, index) => (
+              <div 
+                key={index}
+                className="flex items-center bg-white/10 rounded-xl p-4 hover:bg-white/20 transition-all duration-300 animate-fade-in"
+                style={{animationDelay: `${(index + 1) * 100}ms`}}
+              >
+                <div className="w-2 h-2 bg-white rounded-full ml-4 flex-shrink-0"></div>
+                <p className="text-right">{solution}</p>
+              </div>
+            ))}
+          </div>
+          
+          <div className="text-center mt-8">
+            <div className="inline-flex items-center bg-white/20 rounded-full px-6 py-3">
+              <Target className="w-6 h-6 ml-2" />
+              <span className="text-lg font-medium">هذا البرنامج يحوّل التعليم إلى تجربة قيادية</span>
             </div>
           </div>
         </div>

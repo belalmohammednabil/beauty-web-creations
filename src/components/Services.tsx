@@ -48,11 +48,11 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-20 px-6">
+    <section id="services" className="py-20 px-6 bg-white" dir="rtl">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-            <span className="bg-gradient-to-r from-blue-600 to-yellow-500 bg-clip-text text-transparent">خدماتنا</span>
+            <span className="bg-gradient-to-r from-blue-600 to-yellow-500 bg-clip-text text-transparent">خدماتنا التفصيلية</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             خدمات تعليمية شاملة مصممة خصيصاً للطلاب المصريين لإطلاق إمكاناتهم 
@@ -75,21 +75,21 @@ const Services = () => {
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-blue-900/80 via-blue-600/40 to-transparent"></div>
-                <div className="absolute bottom-0 left-0 p-6">
+                <div className="absolute bottom-0 right-0 p-6 text-right">
                   <h3 className="text-xl font-bold text-white mb-2">{service.title}</h3>
                 </div>
-                <div className="absolute top-4 right-4 flex items-center justify-center w-12 h-12 bg-gradient-to-r from-blue-600 to-yellow-500 rounded-full">
+                <div className="absolute top-4 left-4 flex items-center justify-center w-12 h-12 bg-gradient-to-r from-blue-600 to-yellow-500 rounded-full">
                   <service.icon className="w-6 h-6 text-white" />
                 </div>
               </div>
               
-              <div className="p-6">
+              <div className="p-6 text-right">
                 <p className="text-gray-600 mb-6">{service.description}</p>
                 
                 <ul className="space-y-2">
                   {service.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-center text-sm text-gray-700 hover:text-blue-600 transition-colors duration-200">
-                      <div className="w-2 h-2 bg-gradient-to-r from-blue-600 to-yellow-500 rounded-full mr-3"></div>
+                      <div className="w-2 h-2 bg-gradient-to-r from-blue-600 to-yellow-500 rounded-full ml-3"></div>
                       {feature}
                     </li>
                   ))}
