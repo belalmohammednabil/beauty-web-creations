@@ -5,44 +5,44 @@ const Services = () => {
   const services = [
     {
       icon: Brain,
-      title: "Learner Profiling",
-      description: "Comprehensive analysis of cognitive abilities, academic performance, learning style, and interests using scientific tools.",
-      features: ["Strengths identification", "Dominant intelligences", "Learning style preferences", "Career interests", "Behavioral traits"],
+      title: "ملف المتعلم",
+      description: "تحليل شامل للقدرات المعرفية والأداء الأكاديمي وأسلوب التعلم والاهتمامات باستخدام أدوات علمية.",
+      features: ["تحديد نقاط القوة", "الذكاءات المهيمنة", "تفضيلات أسلوب التعلم", "الاهتمامات المهنية", "السمات السلوكية"],
       image: "photo-1581090464777-f3220bbe1b8b"
     },
     {
       icon: FileText,
-      title: "Personalized Learning & Career Report",
-      description: "Detailed, user-friendly reports outlining strengths, improvement areas, and recommended paths.",
-      features: ["Strengths analysis", "Career recommendations", "Parent guidance", "Academic pathways", "Professional advice"],
+      title: "تقرير التعلم والمهن الشخصي",
+      description: "تقارير مفصلة وسهلة الفهم تُبرز نقاط القوة ومجالات التحسين والمسارات الموصى بها.",
+      features: ["تحليل نقاط القوة", "توصيات مهنية", "إرشاد للوالدين", "المسارات الأكاديمية", "نصائح مهنية"],
       image: "photo-1517022812141-23620dba5c23"
     },
     {
       icon: Users,
-      title: "Career Guidance & Coaching",
-      description: "Individual or small-group sessions with specialists to help students understand themselves.",
-      features: ["Individual sessions", "Group coaching", "Career planning", "Academic guidance", "Future preparation"],
+      title: "التوجيه والتدريب المهني",
+      description: "جلسات فردية أو جماعية صغيرة مع متخصصين لمساعدة الطلاب على فهم أنفسهم.",
+      features: ["جلسات فردية", "تدريب جماعي", "تخطيط مهني", "إرشاد أكاديمي", "إعداد للمستقبل"],
       image: "photo-1531297484001-80022131f5a1"
     },
     {
       icon: Lightbulb,
-      title: "Capstone Learning Journey",
-      description: "Practical training program where students apply skills in real-world projects.",
-      features: ["Real problem solving", "Structured methodology", "Critical thinking", "Presentation skills", "Team collaboration"],
+      title: "رحلة التعلم الختامية",
+      description: "برنامج تدريبي عملي حيث يطبق الطلاب المهارات في مشاريع واقعية.",
+      features: ["حل مشاكل حقيقية", "منهجية منظمة", "التفكير النقدي", "مهارات العرض", "التعاون الجماعي"],
       image: "photo-1522335789203-aabd1fc54bc9"
     },
     {
       icon: Trophy,
-      title: "Student Showcase EXPO",
-      description: "Professional expo where students present projects to parents, teachers, and industry experts.",
-      features: ["Project presentation", "Confidence building", "Industry exposure", "Networking opportunities", "Recognition"],
+      title: "معرض عرض الطلاب",
+      description: "معرض مهني حيث يقدم الطلاب مشاريعهم للوالدين والمعلمين وخبراء الصناعة.",
+      features: ["عرض المشاريع", "بناء الثقة", "التعرض للصناعة", "فرص التواصل", "التقدير"],
       image: "photo-1526374965328-7f61d4dc18c5"
     },
     {
       icon: Palette,
-      title: "Creative Enrichment",
-      description: "Activities to enhance self-expression, emotional intelligence, and teamwork through arts.",
-      features: ["Art programs", "Music activities", "Drama workshops", "Self-expression", "Emotional growth"],
+      title: "الإثراء الإبداعي",
+      description: "أنشطة لتعزيز التعبير عن الذات والذكاء العاطفي والعمل الجماعي من خلال الفنون.",
+      features: ["برامج فنية", "أنشطة موسيقية", "ورش مسرحية", "التعبير عن الذات", "النمو العاطفي"],
       image: "photo-1498936178812-4b2e558d2937"
     }
   ];
@@ -52,11 +52,11 @@ const Services = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-            Our <span className="bg-gradient-to-r from-blue-600 to-yellow-500 bg-clip-text text-transparent">Services</span>
+            <span className="bg-gradient-to-r from-blue-600 to-yellow-500 bg-clip-text text-transparent">خدماتنا</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Comprehensive educational services designed specifically for Egyptian students to unlock their potential 
-            and guide them toward successful academic and career futures.
+            خدمات تعليمية شاملة مصممة خصيصاً للطلاب المصريين لإطلاق إمكاناتهم 
+            وتوجيههم نحو مستقبل أكاديمي ومهني ناجح.
           </p>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-yellow-500 mx-auto mt-6"></div>
         </div>

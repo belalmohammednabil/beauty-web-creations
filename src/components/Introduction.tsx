@@ -5,33 +5,33 @@ const Introduction = () => {
   const challenges = [
     {
       icon: AlertTriangle,
-      title: "Self-awareness Gap",
-      description: "Students lack understanding of their abilities and interests, leading to uninformed academic choices.",
+      title: "فجوة الوعي الذاتي",
+      description: "يفتقر الطلاب لفهم قدراتهم واهتماماتهم، مما يؤدي إلى خيارات أكاديمية غير مدروسة.",
       image: "photo-1581092795360-fd1ca04f0952"
     },
     {
       icon: Target,
-      title: "Limited Career Guidance",
-      description: "Absence of effective career guidance systems using reliable assessment tools.",
+      title: "إرشاد مهني محدود",
+      description: "غياب أنظمة الإرشاد المهني الفعّالة باستخدام أدوات التقييم الموثوقة.",
       image: "photo-1519389950473-47ba0277781c"
     },
     {
       icon: TrendingDown,
-      title: "Education-Market Disconnect",
-      description: "Weak connections between education and job market with limited professional relevance.",
+      title: "انفصال التعليم عن السوق",
+      description: "ضعف الروابط بين التعليم وسوق العمل مع محدودية الصلة المهنية.",
       image: "photo-1460925895917-afdab827c52f"
     },
     {
       icon: BookOpen,
-      title: "Practical Experience Shortage",
-      description: "Lack of real-world experiences linking classroom learning to practical challenges.",
+      title: "نقص الخبرة العملية",
+      description: "قلة التجارب الواقعية التي تربط التعلم النظري بالتحديات العملية.",
       image: "photo-1498050108023-c5249f4df085"
     }
   ];
 
   const statistics = [
-    { stat: "1 in 3", description: "Arab students feel education is disconnected from career future" },
-    { stat: "75%", description: "Arab youth lack reliable career guidance during education" }
+    { stat: "1 من 3", description: "طلاب عرب يشعرون بانفصال التعليم عن مستقبلهم المهني" },
+    { stat: "%75", description: "من الشباب العربي يفتقرون للإرشاد المهني الموثوق أثناء التعليم" }
   ];
 
   return (
@@ -39,11 +39,11 @@ const Introduction = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-            Addressing Educational <span className="bg-gradient-to-r from-blue-600 to-yellow-500 bg-clip-text text-transparent">Challenges</span>
+            مواجهة التحديات <span className="bg-gradient-to-r from-blue-600 to-yellow-500 bg-clip-text text-transparent">التعليمية</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Despite efforts to improve curricula and learning environments, schools in Egypt and the Arab region 
-            face significant challenges in preparing students for their academic and professional futures.
+            رغم الجهود المبذولة لتطوير المناهج وبيئات التعلم، تواجه المدارس في مصر والمنطقة العربية 
+            تحديات كبيرة في إعداد الطلاب لمستقبلهم الأكاديمي والمهني.
           </p>
         </div>
 
@@ -70,7 +70,7 @@ const Introduction = () => {
         <div className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-3xl p-8 text-white animate-fade-in">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-2xl font-bold mb-4">Supporting Data</h3>
+              <h3 className="text-2xl font-bold mb-4">البيانات الداعمة</h3>
               <div className="space-y-4">
                 {statistics.map((item, index) => (
                   <div key={index} className="flex items-start space-x-4 hover:scale-105 transition-transform duration-300">
@@ -88,10 +88,10 @@ const Introduction = () => {
                   className="rounded-2xl w-full h-48 object-cover opacity-20 absolute inset-0"
                 />
                 <div className="relative z-10 p-6">
-                  <div className="text-4xl font-bold text-yellow-400 mb-2">Our Solution</div>
+                  <div className="text-4xl font-bold text-yellow-400 mb-2">حلولنا</div>
                   <p className="text-blue-100">
-                    The Capstone Journey program offers an innovative solution through data analysis, 
-                    personalized learning journeys, and practical competency development.
+                    يوفر برنامج رحلة المشروع الختامي حلاً مبتكراً من خلال تحليل البيانات، 
+                    ورحلات التعلم الشخصية، وتطوير الكفاءات العملية.
                   </p>
                 </div>
               </div>

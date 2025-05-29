@@ -11,7 +11,7 @@ const Hero = () => {
             <div className="space-y-4">
               <div className="inline-flex items-center space-x-2 bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-medium animate-fade-in animation-delay-500">
                 <Star className="w-4 h-4" />
-                <span>Educational Excellence Platform</span>
+                <span>منصة التميز التعليمي</span>
               </div>
               
               <h1 className="text-5xl lg:text-6xl font-bold text-gray-800 leading-tight animate-fade-in animation-delay-1000">
@@ -21,12 +21,11 @@ const Hero = () => {
               </h1>
               
               <p className="text-xl text-blue-700 font-medium animate-fade-in animation-delay-1000">
-                "Analyzing educational data to unlock students' potential and guide them toward a bright career future."
+                "تحليل البيانات التعليمية لإطلاق إمكانات الطلاب وتوجيههم نحو مستقبل مهني مشرق."
               </p>
               
               <p className="text-lg text-gray-600 leading-relaxed animate-fade-in animation-delay-2000">
-                Transform education into a leadership experience with our innovative platform that analyzes student data, 
-                designs personalized learning journeys, and provides comprehensive career guidance for Egyptian students.
+                حوّل التعليم إلى تجربة قيادية مع منصتنا المبتكرة التي تحلل بيانات الطلاب وتصمم رحلات تعلم شخصية وتوفر إرشاداً مهنياً شاملاً للطلاب المصريين.
               </p>
             </div>
 
@@ -35,7 +34,7 @@ const Hero = () => {
                 size="lg" 
                 className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-8 py-3 rounded-full transition-all duration-300 hover:scale-105"
               >
-                Explore Programs
+                استكشف البرامج
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
               <Button 
@@ -43,7 +42,7 @@ const Hero = () => {
                 size="lg"
                 className="border-blue-300 text-blue-700 hover:bg-blue-50 px-8 py-3 rounded-full transition-all duration-300"
               >
-                Learn More
+                اعرف المزيد
               </Button>
             </div>
 
@@ -52,22 +51,22 @@ const Hero = () => {
                 <div className="flex items-center justify-center w-12 h-12 bg-yellow-100 rounded-full mb-2 mx-auto">
                   <Users className="w-6 h-6 text-yellow-600" />
                 </div>
-                <div className="text-2xl font-bold text-blue-800">1000+</div>
-                <div className="text-sm text-gray-600">Students Guided</div>
+                <div className="text-2xl font-bold text-blue-800">+1000</div>
+                <div className="text-sm text-gray-600">طالب تم توجيههم</div>
               </div>
               <div className="text-center hover:scale-105 transition-transform duration-300">
                 <div className="flex items-center justify-center w-12 h-12 bg-blue-100 rounded-full mb-2 mx-auto">
                   <TrendingUp className="w-6 h-6 text-blue-600" />
                 </div>
-                <div className="text-2xl font-bold text-blue-800">95%</div>
-                <div className="text-sm text-gray-600">Success Rate</div>
+                <div className="text-2xl font-bold text-blue-800">%95</div>
+                <div className="text-sm text-gray-600">معدل النجاح</div>
               </div>
               <div className="text-center hover:scale-105 transition-transform duration-300">
                 <div className="flex items-center justify-center w-12 h-12 bg-yellow-100 rounded-full mb-2 mx-auto">
                   <Star className="w-6 h-6 text-yellow-600" />
                 </div>
-                <div className="text-2xl font-bold text-blue-800">50+</div>
-                <div className="text-sm text-gray-600">Partner Schools</div>
+                <div className="text-2xl font-bold text-blue-800">+50</div>
+                <div className="text-sm text-gray-600">مدرسة شريكة</div>
               </div>
             </div>
           </div>
@@ -81,8 +80,8 @@ const Hero = () => {
                 className="rounded-2xl w-full h-80 object-cover hover:scale-105 transition-transform duration-500"
               />
               <div className="absolute -bottom-4 -right-4 bg-gradient-to-r from-blue-600 to-yellow-500 text-white p-4 rounded-2xl shadow-lg animate-float">
-                <div className="text-lg font-bold">Future-Ready</div>
-                <div className="text-sm opacity-90">Education Platform</div>
+                <div className="text-lg font-bold">جاهز للمستقبل</div>
+                <div className="text-sm opacity-90">منصة تعليمية</div>
               </div>
             </div>
           </div>

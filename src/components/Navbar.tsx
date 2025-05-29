@@ -21,11 +21,11 @@ const Navbar = () => {
   }, []);
 
   const menuItems = [
-    { label: "Home", href: "#home" },
-    { label: "About", href: "#about" },
-    { label: "Services", href: "#services" },
-    { label: "Programs", href: "#programs" },
-    { label: "Contact", href: "#contact" },
+    { label: "الرئيسية", href: "#home" },
+    { label: "عن البرنامج", href: "#about" },
+    { label: "خدماتنا", href: "#services" },
+    { label: "البرامج", href: "#programs" },
+    { label: "تواصل معنا", href: "#contact" },
   ];
 
   return (
@@ -36,7 +36,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-2 group animate-fade-in">
             <div className="w-8 h-8 bg-gradient-to-r from-blue-600 to-yellow-500 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-              <span className="text-white font-bold text-sm">T</span>
+              <span className="text-white font-bold text-sm">ت</span>
             </div>
             <span className="text-xl font-bold bg-gradient-to-r from-blue-800 to-blue-600 bg-clip-text text-transparent">TracKWise.360</span>
           </div>
@@ -55,7 +55,7 @@ const Navbar = () => {
               </a>
             ))}
             <Button className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white hover:scale-105 transition-transform duration-300 animate-fade-in animation-delay-500">
-              Get Started
+              ابدأ الآن
             </Button>
           </div>
 
@@ -83,7 +83,7 @@ const Navbar = () => {
               </a>
             ))}
             <Button className="w-full mt-4 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white">
-              Get Started
+              ابدأ الآن
             </Button>
           </div>
         )}

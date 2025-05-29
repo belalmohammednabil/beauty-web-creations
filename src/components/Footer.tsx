@@ -3,25 +3,25 @@ import { Facebook, Twitter, Instagram, Linkedin, Mail, Phone } from "lucide-reac
 
 const Footer = () => {
   const quickLinks = [
-    { label: "Home", href: "#home" },
-    { label: "About", href: "#about" },
-    { label: "Services", href: "#services" },
-    { label: "Programs", href: "#programs" },
-    { label: "Contact", href: "#contact" }
+    { label: "الرئيسية", href: "#home" },
+    { label: "عن البرنامج", href: "#about" },
+    { label: "خدماتنا", href: "#services" },
+    { label: "البرامج", href: "#programs" },
+    { label: "تواصل معنا", href: "#contact" }
   ];
 
   const programs = [
-    { label: "My Path Program", href: "#programs" },
-    { label: "ProMap Program", href: "#programs" },
-    { label: "Future-Maker Package", href: "#programs" },
-    { label: "TOT Training", href: "#programs" }
+    { label: "برنامج مساري", href: "#programs" },
+    { label: "برنامج الخريطة المهنية", href: "#programs" },
+    { label: "حزمة صانع المستقبل", href: "#programs" },
+    { label: "تدريب المدربين", href: "#programs" }
   ];
 
   const socialLinks = [
-    { icon: Facebook, href: "#", label: "Facebook" },
-    { icon: Twitter, href: "#", label: "Twitter" },
-    { icon: Instagram, href: "#", label: "Instagram" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" }
+    { icon: Facebook, href: "#", label: "فيسبوك" },
+    { icon: Twitter, href: "#", label: "تويتر" },
+    { icon: Instagram, href: "#", label: "إنستغرام" },
+    { icon: Linkedin, href: "#", label: "لينكد إن" }
   ];
 
   return (
@@ -32,12 +32,12 @@ const Footer = () => {
           <div className="space-y-6">
             <div className="flex items-center space-x-2">
               <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-yellow-500 rounded-full flex items-center justify-center">
-                <span className="text-white font-bold">T</span>
+                <span className="text-white font-bold">ت</span>
               </div>
               <span className="text-xl font-bold">TracKWise.360</span>
             </div>
             <p className="text-gray-300 leading-relaxed">
-              "Analyzing educational data to unlock students' potential and guide them toward a bright career future."
+              "تحليل البيانات التعليمية لإطلاق إمكانات الطلاب وتوجيههم نحو مستقبل مهني مشرق."
             </p>
             <div className="space-y-2">
               <div className="flex items-center space-x-3">
@@ -53,7 +53,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-semibold mb-6">Quick Links</h3>
+            <h3 className="text-lg font-semibold mb-6">روابط سريعة</h3>
             <ul className="space-y-3">
               {quickLinks.map((link) => (
                 <li key={link.label}>
@@ -70,7 +70,7 @@ const Footer = () => {
 
           {/* Programs */}
           <div>
-            <h3 className="text-lg font-semibold mb-6">Programs</h3>
+            <h3 className="text-lg font-semibold mb-6">البرامج</h3>
             <ul className="space-y-3">
               {programs.map((program) => (
                 <li key={program.label}>
@@ -87,9 +87,9 @@ const Footer = () => {
 
           {/* Newsletter & Social */}
           <div>
-            <h3 className="text-lg font-semibold mb-6">Connect With Us</h3>
+            <h3 className="text-lg font-semibold mb-6">تواصل معنا</h3>
             <p className="text-gray-300 mb-4">
-              Follow us for educational insights and updates on our programs.
+              تابعنا للحصول على رؤى تعليمية وتحديثات برامجنا.
             </p>
             <div className="flex space-x-4">
               {socialLinks.map((social) => (
@@ -109,17 +109,17 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              © 2024 TracKWise.360. All rights reserved.
+              © 2024 TracKWise.360. جميع الحقوق محفوظة.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="text-gray-400 hover:text-yellow-400 text-sm transition-colors duration-200">
-                Privacy Policy
+                سياسة الخصوصية
               </a>
               <a href="#" className="text-gray-400 hover:text-yellow-400 text-sm transition-colors duration-200">
-                Terms of Service
+                شروط الخدمة
               </a>
               <a href="#" className="text-gray-400 hover:text-yellow-400 text-sm transition-colors duration-200">
-                Cookie Policy
+                سياسة ملفات تعريف الارتباط
               </a>
             </div>
           </div>
