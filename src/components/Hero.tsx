@@ -1,54 +1,91 @@
 
 import { Button } from "@/components/ui/button";
-import { Sparkles, Heart, Star } from "lucide-react";
+import { ArrowRight, Star, Users, TrendingUp } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background decorative elements */}
-      <div className="absolute inset-0 bg-gradient-to-br from-rose-100/30 via-pink-50/20 to-purple-100/30"></div>
-      <div className="absolute top-20 left-10 animate-float">
-        <Sparkles className="w-8 h-8 text-rose-300" />
-      </div>
-      <div className="absolute top-40 right-20 animate-float animation-delay-1000">
-        <Heart className="w-6 h-6 text-pink-400" />
-      </div>
-      <div className="absolute bottom-40 left-20 animate-float animation-delay-2000">
-        <Star className="w-7 h-7 text-rose-400" />
-      </div>
-      
-      <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
-        <div className="mb-8 animate-fade-in">
-          <h1 className="text-6xl md:text-8xl font-light text-gray-800 mb-4 tracking-tight">
-            <span className="bg-gradient-to-r from-rose-400 via-pink-500 to-purple-500 bg-clip-text text-transparent">
-              Bella
-            </span>
-          </h1>
-          <p className="text-xl md:text-2xl text-gray-600 font-light mb-2">
-            Beauty Beyond Boundaries
-          </p>
-          <div className="w-24 h-0.5 bg-gradient-to-r from-rose-400 to-pink-500 mx-auto mb-8"></div>
-        </div>
-        
-        <p className="text-lg text-gray-700 mb-12 max-w-2xl mx-auto leading-relaxed animate-fade-in animation-delay-500">
-          Discover our luxurious collection of premium cosmetics designed to enhance your natural beauty. 
-          From radiant foundations to captivating lipsticks, every product is crafted with love and precision.
-        </p>
-        
-        <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in animation-delay-1000">
-          <Button 
-            size="lg" 
-            className="bg-gradient-to-r from-rose-400 to-pink-500 hover:from-rose-500 hover:to-pink-600 text-white px-8 py-3 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg"
-          >
-            Shop Collection
-          </Button>
-          <Button 
-            variant="outline" 
-            size="lg"
-            className="border-rose-300 text-rose-600 hover:bg-rose-50 px-8 py-3 rounded-full transition-all duration-300 hover:scale-105"
-          >
-            Learn More
-          </Button>
+    <section id="home" className="pt-20 pb-16 px-6 min-h-screen flex items-center">
+      <div className="max-w-7xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="space-y-8">
+            <div className="space-y-4">
+              <div className="inline-flex items-center space-x-2 bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-medium">
+                <Star className="w-4 h-4" />
+                <span>Educational Excellence Platform</span>
+              </div>
+              
+              <h1 className="text-5xl lg:text-6xl font-bold text-gray-800 leading-tight">
+                <span className="bg-gradient-to-r from-blue-600 to-yellow-500 bg-clip-text text-transparent">
+                  TracKWise.360
+                </span>
+              </h1>
+              
+              <p className="text-xl text-blue-700 font-medium">
+                "Analyzing educational data to unlock students' potential and guide them toward a bright career future."
+              </p>
+              
+              <p className="text-lg text-gray-600 leading-relaxed">
+                Transform education into a leadership experience with our innovative platform that analyzes student data, 
+                designs personalized learning journeys, and provides comprehensive career guidance for Egyptian students.
+              </p>
+            </div>
+
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Button 
+                size="lg" 
+                className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-8 py-3 rounded-full transition-all duration-300 hover:scale-105"
+              >
+                Explore Programs
+                <ArrowRight className="w-5 h-5 ml-2" />
+              </Button>
+              <Button 
+                variant="outline" 
+                size="lg"
+                className="border-blue-300 text-blue-700 hover:bg-blue-50 px-8 py-3 rounded-full transition-all duration-300"
+              >
+                Learn More
+              </Button>
+            </div>
+
+            <div className="grid grid-cols-3 gap-6 pt-8">
+              <div className="text-center">
+                <div className="flex items-center justify-center w-12 h-12 bg-yellow-100 rounded-full mb-2 mx-auto">
+                  <Users className="w-6 h-6 text-yellow-600" />
+                </div>
+                <div className="text-2xl font-bold text-blue-800">1000+</div>
+                <div className="text-sm text-gray-600">Students Guided</div>
+              </div>
+              <div className="text-center">
+                <div className="flex items-center justify-center w-12 h-12 bg-blue-100 rounded-full mb-2 mx-auto">
+                  <TrendingUp className="w-6 h-6 text-blue-600" />
+                </div>
+                <div className="text-2xl font-bold text-blue-800">95%</div>
+                <div className="text-sm text-gray-600">Success Rate</div>
+              </div>
+              <div className="text-center">
+                <div className="flex items-center justify-center w-12 h-12 bg-yellow-100 rounded-full mb-2 mx-auto">
+                  <Star className="w-6 h-6 text-yellow-600" />
+                </div>
+                <div className="text-2xl font-bold text-blue-800">50+</div>
+                <div className="text-sm text-gray-600">Partner Schools</div>
+              </div>
+            </div>
+          </div>
+
+          <div className="relative">
+            <div className="absolute inset-0 bg-gradient-to-br from-blue-200/30 to-yellow-200/30 rounded-3xl transform rotate-3"></div>
+            <div className="relative bg-white rounded-3xl shadow-2xl p-8">
+              <img
+                src="https://images.unsplash.com/photo-1523050854058-8df90110c9d1?auto=format&fit=crop&w=600&q=80"
+                alt="Students learning"
+                className="rounded-2xl w-full h-80 object-cover"
+              />
+              <div className="absolute -bottom-4 -right-4 bg-gradient-to-r from-blue-600 to-yellow-500 text-white p-4 rounded-2xl shadow-lg">
+                <div className="text-lg font-bold">Future-Ready</div>
+                <div className="text-sm opacity-90">Education Platform</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
